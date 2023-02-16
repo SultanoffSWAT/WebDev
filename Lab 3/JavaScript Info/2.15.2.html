@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>I'm Javascript</title>
+    </head>
+    
+    <body>
+        <script>
+
+        let age = prompt("How old are you?");
+
+        // 1
+        function checkAge(age){
+            return (age>18) ? true : confirm('Did parents allow you?'); // return
+        }
+
+        // 2
+        function checkAge(age){
+            return age>18 || confirm('Did parents allow you2?'); // return
+        }
+        checkAge(age)
+    
+
+        </script>
+    </body>
+</html>

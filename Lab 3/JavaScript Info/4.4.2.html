@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <script>
+            let calculator = {
+                // ... your code ...
+                read(){
+                    this.a = +prompt("value for a");
+                    this.b = +prompt("value for b");
+                },
+                sum(){
+                    return this.a + this.b;
+                },
+                mul(){
+                    return this.a * this.b;
+                }
+            };
+
+            calculator.read();
+            alert( calculator.sum() );
+            alert( calculator.mul() );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>I'm Javascript</title>
+    </head>
+    
+    <body>
+        <script>
+
+            let num1 = prompt("num1?");
+            let num2 = prompt("num2?");
+
+            function pow(a, b){
+                let result=1;
+                for(let i=0; i<b; i++){
+                    result=result*a;
+                }
+                alert(result);
+            }
+            if (num2 < 1) {
+                alert(`Only natural num2`);
+            } else {
+                pow(num1, num2);
+            }
+
+        </script>
+    </body>
+</html>
