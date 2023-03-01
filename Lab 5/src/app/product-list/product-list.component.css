@@ -1,0 +1,147 @@
+body{
+  /*width: 400px;*/
+  /*background-color: burlywood;*/
+  /*position: absolute;*/
+  /*left: 330px;*/
+}
+
+
+
+
+#container{
+  width: 1200px;
+  /*background-color: burlywood;*/
+  position: absolute;
+  left: 320px;
+  text-align: center;
+}
+
+img{
+  height: 150px;
+  margin-top: 12px;
+}
+
+hr{
+  width: 200px;
+  color: grey;
+}
+.block{
+  border: 0.5px solid grey;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 310px;
+  height: 470px;
+  float: left;
+  position: relative;
+  bottom: 100px;
+  /*background-color: red;*/
+}
+#element{
+  /*border: 0.5px solid grey;*/
+  /*margin-top: 30px;*/
+  /*margin-left: 40px;*/
+  /*width: 310px;*/
+  /*height: 460px;*/
+  /*float: left;*/
+  /*border-radius: 8px;*/
+}
+
+p, a{
+  color: black;
+  font-family: "Apple SD Gothic Neo";
+}
+
+#description{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+#search{
+  text-align: center;
+  position: relative;
+  left: 660px;
+}
+
+
+#search-container{
+  display: flex;
+  justify-content: center;
+}
+
+#search-input:focus{
+  outline: none;
+}
+
+
+#search-input{
+  width: 300px;
+  height: 40px;
+  font-family: "Apple SD Gothic Neo";
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+#search-button{
+  width: 40px;
+  height: 40px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+#mag-glass{
+  color:white;
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+}
+
+
+#share{
+  float: left;
+  margin-right: 20px;
+}
+
+#clicker{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom:16px
+}
+
+#delete{
+  background-color: transparent;
+  color: black;
+  position: absolute;
+  right:5px;
+  top:5px;
+}
+
+#link{
+  font-size: 14px;
+  color: brown;
+  margin-right: 40px;
+  /*position: relative;*/
+  /*bottom: 20px;*/
+  /*float: left;*/
+}
+
+#linkLike{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 11px;
+}
+
+#category-container{
+  position: relative;
+  left: 300px;
+}
+
+.category-item{
+  margin-left: 160px;
+}
+
+

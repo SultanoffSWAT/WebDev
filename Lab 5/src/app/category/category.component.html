@@ -1,0 +1,13 @@
+<h2>Select category</h2>
+<div id="container">
+  <div id="category-container" *ngFor="let category of categories">
+    <ul id="category-list">
+      <li>
+        {{category.name}}
+        <input type="checkbox" [checked]="category.choose" (change)="update(category)">
+      </li>
+    </ul>
+  </div>
+  <app-product-list [status]="show" (numLiked)="like($event)"></app-product-list>
+  <p>Likes: {{likes}}</p>
+</div>

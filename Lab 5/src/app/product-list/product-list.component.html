@@ -1,0 +1,45 @@
+
+<!--<h2>Products</h2>-->
+
+<div id="container">
+  <div id="element" *ngFor="let product of products">
+    <div *ngIf="inList(product.category)&& product.visible" class="block">
+    <button id="delete" (click)="delete(product)">X</button>
+      <img id="img2" [src]="product.image">
+      <hr>
+      <h3>
+        <a [title]="product.name + ' details'"
+           [routerLink]="['/products', product.id]">
+          {{product.name}}
+        </a>
+      </h3>
+      <p id="description" *ngIf="product.description">
+        {{ product.description }}
+      </p>
+      <p id="rating">
+        rating: {{product.rating}}/5
+      </p>
+      <div id="clicker">
+        <button id="share" (click)="share(product.id)">Share</button>
+        <app-product-alerts
+          [product]="product"
+          (notify)="onNotify()">
+        </app-product-alerts>
+      </div>
+      <div id="linkLike">
+        <a id="link" href={{product.link}}>Kaspi.kz</a> <input type="checkbox" (change)="like(product)">
+      </div>
+    </div>
+    </div>
+</div>
+
+
+
+<!--<div id="search">-->
+<!--  <div id="search-container">-->
+<!--    <input id="search-input" type="text" placeholder="Search...">-->
+<!--    <button id="search-button"><i id="mag-glass" class="fa-solid fa-magnifying-glass"></i></button>-->
+<!--  </div>-->
+<!--  <a><app-product-item></app-product-item></a>-->
+<!--  <hr style="width: 320px">-->
+<!--</div>-->
