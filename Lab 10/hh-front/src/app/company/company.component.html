@@ -1,0 +1,6 @@
+<h1>COMPANIES</h1>
+
+<ul>
+  <li *ngFor="let company of companies"><a (click)="show_vacancies(company.id)">{{company.name}}</a></li>
+</ul>
+<button (click)="ngOnInit()">BACK</button>
