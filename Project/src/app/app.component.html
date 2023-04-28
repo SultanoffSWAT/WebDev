@@ -1,0 +1,30 @@
+
+
+
+<ng-container *ngIf="!logged">
+  <h1>Login Form</h1>
+  <div>
+    <fieldset>
+      <label>Username: </label>
+      <input type="text" [(ngModel)]="username">
+    </fieldset>
+    <fieldset>
+      <label>Password: </label>
+      <input type="password" [(ngModel)]="password">
+    </fieldset>
+    <button (click)="login()">Login</button>
+  </div>
+</ng-container>
+
+<!--<ng-container *ngIf="!logged">-->
+<!--  <h1>Welcome</h1>-->
+<!--</ng-container>-->
+
+<ng-container *ngIf="logged">
+<!--  <button (click)="logout()">Logout</button>-->
+  <app-header (sender)="logout($event)"></app-header>
+    <div class = "container">
+      <router-outlet></router-outlet>
+    </div>
+  <app-footer></app-footer>
+</ng-container>
